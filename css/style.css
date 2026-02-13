@@ -165,6 +165,16 @@ p {
     color: var(--text-primary);
 }
 
+/* Code Tags */
+code {
+    background-color: var(--bg-accent);
+    color: var(--primary-color);
+    padding: 0.125rem 0.375rem;
+    border-radius: 4px;
+    font-size: 0.875em;
+    font-family: 'Courier New', monospace;
+}
+
 /* Links */
 a {
     color: var(--primary-color);
@@ -202,6 +212,14 @@ li {
     font-size: 1.375rem;
 }
 
+.post h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
 .post-meta {
     margin-bottom: 1rem;
 }
@@ -209,6 +227,12 @@ li {
 .date {
     color: var(--text-secondary);
     font-size: 0.875rem;
+}
+
+.category {
+    color: var(--primary-color);
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
 .post p {
@@ -222,6 +246,37 @@ li {
 .post em {
     color: var(--text-secondary);
     font-style: italic;
+}
+
+/* Details and Summary */
+details {
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+summary {
+    padding: 1rem;
+    background-color: var(--bg-accent);
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+summary:hover {
+    background-color: rgba(79, 126, 255, 0.1);
+}
+
+details[open] summary {
+    margin-bottom: 1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+details div {
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+    font-size: 0.875rem;
+    line-height: 1.8;
 }
 
 /* Category List */
