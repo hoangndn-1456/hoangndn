@@ -1,121 +1,149 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Cá Nhân</title>
+    <title>Blog Cá Nhân - Hoàng Ngô</title>
     <meta name="description" content="Blog cá nhân - Chia sẻ kiến thức và trải nghiệm">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <h1 class="brand-title">My Blog</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Trang chủ</a></li>
-                <li><a href="#posts" class="nav-link">Bài viết</a></li>
-                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
-                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
-            </ul>
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
                 </svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Chào mừng đến với blog của tôi</h1>
-                <p class="hero-subtitle">Nơi chia sẻ kiến thức, trải nghiệm và những suy nghĩ cá nhân</p>
-                <a href="#posts" class="cta-button">Khám phá bài viết</a>
+                <span>Blog Cá Nhân</span>
             </div>
+            <nav class="header-nav">
+                <a href="#home">Trang chủ</a>
+                <a href="#posts">Bài viết</a>
+                <a href="#about">Giới thiệu</a>
+            </nav>
         </div>
-        <div class="hero-background"></div>
-    </section>
+    </header>
 
-    <!-- Featured Posts -->
-    <section id="posts" class="posts-section">
-        <div class="container">
-            <h2 class="section-title">Bài viết nổi bật</h2>
-            <div class="posts-grid" id="postsGrid">
-                <!-- Posts will be loaded dynamically -->
-            </div>
-        </div>
-    </section>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <a href="#intro" class="nav-link active">Giới thiệu</a>
+                    <a href="#latest-posts" class="nav-link">Bài viết mới nhất</a>
+                    <a href="#categories" class="nav-link">Chuyên mục</a>
+                    <a href="#about-me" class="nav-link">Về tôi</a>
+                </div>
+            </nav>
+        </aside>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <h2 class="section-title">Giới thiệu</h2>
-                <p class="about-text">
-                    Xin chào! Tôi là một người đam mê công nghệ và chia sẻ kiến thức. 
-                    Blog này là nơi tôi ghi lại những trải nghiệm, học hỏi và suy nghĩ 
-                    của mình về lập trình, công nghệ và cuộc sống.
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Introduction Section -->
+            <section id="intro">
+                <h1>Chào mừng đến với blog của tôi</h1>
+                <p>Đây là nơi tôi chia sẻ kiến thức, trải nghiệm và những suy nghĩ về lập trình, công nghệ và cuộc sống.
                 </p>
-                <div class="skills">
-                    <span class="skill-tag">Web Development</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Design</span>
-                    <span class="skill-tag">UX/UI</span>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Liên hệ</h2>
-            <div class="contact-content">
-                <p class="contact-text">Bạn có thể kết nối với tôi qua các kênh sau:</p>
-                <div class="social-links">
-                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        GitHub
-                    </a>
-                    <a href="mailto:your.email@example.com" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        Email
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- Latest Posts Section -->
+            <section id="latest-posts">
+                <h2>Bài viết mới nhất</h2>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 My Blog. Made with ❤️</p>
-        </div>
-    </footer>
+                <article class="post">
+                    <h3>Khởi đầu với GitHub Pages</h3>
+                    <div class="post-meta">
+                        <span class="date">13/02/2026</span>
+                    </div>
+                    <p><strong>Hướng dẫn tạo trang web tĩnh với GitHub Pages</strong></p>
+                    <p>GitHub Pages là một dịch vụ miễn phí cho phép bạn host các trang web tĩnh trực tiếp từ GitHub
+                        repository. Trong bài viết này, tôi sẽ hướng dẫn các bạn:</p>
+                    <ul>
+                        <li>Tạo repository mới trên GitHub</li>
+                        <li>Cấu hình GitHub Pages settings</li>
+                        <li>Deploy website của bạn lên internet</li>
+                        <li>Tùy chỉnh domain name (nếu có)</li>
+                    </ul>
+                    <p><em>Note: Bạn có thể sử dụng HTML, CSS, JavaScript thuần hoặc các static site generators như
+                            Jekyll.</em></p>
+                </article>
+
+                <article class="post">
+                    <h3>Thiết kế Web đơn giản và hiệu quả</h3>
+                    <div class="post-meta">
+                        <span class="date">12/02/2026</span>
+                    </div>
+                    <p><strong>Nguyên tắc thiết kế web tối giản</strong></p>
+                    <p>Thiết kế web không cần phải phức tạp để trở nên hiệu quả. Dưới đây là các nguyên tắc thiết kế đơn
+                        giản:</p>
+                    <ul>
+                        <li>Tập trung vào nội dung chính</li>
+                        <li>Sử dụng typography rõ ràng, dễ đọc</li>
+                        <li>Tạo hierarchy với headings và spacing</li>
+                        <li>Giữ màu sắc đơn giản và nhất quán</li>
+                    </ul>
+                </article>
+
+                <article class="post">
+                    <h3>JavaScript cho người mới bắt đầu</h3>
+                    <div class="post-meta">
+                        <span class="date">11/02/2026</span>
+                    </div>
+                    <p><strong>Các khái niệm cơ bản trong JavaScript</strong></p>
+                    <p>JavaScript là ngôn ngữ lập trình phổ biến nhất cho web development. Bài viết này sẽ giới thiệu:
+                    </p>
+                    <ol>
+                        <li><strong>Variables và Data Types</strong> - Cách khai báo và sử dụng biến</li>
+                        <li><strong>Functions</strong> - Tạo và sử dụng hàm trong JavaScript</li>
+                        <li><strong>DOM Manipulation</strong> - Tương tác với HTML elements</li>
+                        <li><strong>Events</strong> - Xử lý user interactions</li>
+                    </ol>
+                </article>
+            </section>
+
+            <!-- Categories Section -->
+            <section id="categories">
+                <h2>Chuyên mục</h2>
+                <div class="category-list">
+                    <div class="category-item">
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, JavaScript và các frameworks hiện đại</p>
+                    </div>
+                    <div class="category-item">
+                        <h3>Programming</h3>
+                        <p>Ngôn ngữ lập trình, algorithms và best practices</p>
+                    </div>
+                    <div class="category-item">
+                        <h3>Tools & Workflow</h3>
+                        <p>Git, GitHub, VS Code và các công cụ phát triển</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about-me">
+                <h2>Về tôi</h2>
+                <p>Xin chào! Tôi là một software developer đam mê công nghệ và học hỏi những điều mới.</p>
+                <p>Blog này là nơi tôi ghi lại quá trình học tập, chia sẻ kiến thức và kết nối với cộng đồng.</p>
+
+                <h3>Liên hệ</h3>
+                <p>Bạn có thể kết nối với tôi qua:</p>
+                <ul>
+                    <li><a href="https://github.com/hoangndn-1456" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:your.email@example.com">Email</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
