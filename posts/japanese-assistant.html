@@ -38,16 +38,15 @@
         <aside class="sidebar">
             <nav class="sidebar-nav">
                 <div class="nav-section">
-                    <a href="#intro" class="nav-link active">Giới thiệu</a>
-                    <a href="#gem-link" class="nav-link">🚀 Sử dụng GEM</a>
-                    <a href="#create-gem" class="nav-link">🔧 Tự tạo GEM</a>
-                    <a href="#copy-instruction" class="nav-link">📋 Copy Instruction</a>
+                    <a href="#gem-link" class="nav-link active">🚀 Sử dụng GEM</a>
                     <a href="#commands" class="nav-link">Các lệnh</a>
                     <a href="#fix-command" class="nav-link">/fix - Sửa lỗi</a>
                     <a href="#translate-commands" class="nav-link">Dịch thuật</a>
                     <a href="#learning-commands" class="nav-link">Học tập</a>
                     <a href="#advanced-commands" class="nav-link">Nâng cao</a>
                     <a href="#rules" class="nav-link">Quy tắc chung</a>
+                    <a href="#create-gem" class="nav-link">🔧 Tự tạo GEM</a>
+                    <a href="#copy-instruction" class="nav-link">📋 Copy Instruction</a>
                 </div>
             </nav>
         </aside>
@@ -64,12 +63,6 @@
                     </div>
                 </div>
 
-                <section id="intro">
-                    <p>Bạn là một Trợ Lý Tiếng Nhật chuyên ngành CNTT (IT).<br>
-                        Bạn phản hồi <strong>bình thường</strong> với mọi tin nhắn <strong>trừ khi</strong> người dùng
-                        bắt đầu tin nhắn bằng một trong các lệnh dưới đây.</p>
-                </section>
-
                 <section id="gem-link"
                     style="background-color: var(--bg-secondary); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
                     <h2 style="margin-top: 0;">🚀 Sử dụng GEM có sẵn</h2>
@@ -83,202 +76,6 @@
                     <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
                         <em>Chỉ cần click vào link và bắt đầu sử dụng ngay! Không cần cài đặt gì thêm.</em>
                     </p>
-                </section>
-
-                <section id="create-gem">
-                    <h2>🔧 Tự tạo GEM riêng của bạn</h2>
-                    <p>Nếu bạn muốn tùy chỉnh hoặc tạo GEM riêng với instruction này, làm theo các bước sau:</p>
-
-                    <h3>Bước 1: Truy cập Google Gemini</h3>
-                    <ol>
-                        <li>Mở <a href="https://gemini.google.com" target="_blank"
-                                rel="noopener noreferrer">gemini.google.com</a></li>
-                        <li>Đăng nhập với tài khoản Google của bạn</li>
-                    </ol>
-
-                    <h3>Bước 2: Tạo GEM mới</h3>
-                    <ol>
-                        <li>Tìm và click vào nút <strong>"Gem Manager"</strong> hoặc <strong>"Create Gem"</strong></li>
-                        <li>Click <strong>"New Gem"</strong> hoặc biểu tượng <strong>"+"</strong></li>
-                    </ol>
-
-                    <h3>Bước 3: Cấu hình GEM</h3>
-                    <ol>
-                        <li><strong>Name</strong>: Đặt tên cho GEM (ví dụ: "Japanese Assistant")</li>
-                        <li><strong>Description</strong>: Mô tả ngắn gọn (ví dụ: "Trợ lý tiếng Nhật cho IT")</li>
-                        <li><strong>Instructions</strong>: Copy toàn bộ nội dung từ phần "Copy Instruction Content" bên
-                            dưới và paste vào đây</li>
-                    </ol>
-
-                    <h3>Bước 4: Lưu và Sử dụng</h3>
-                    <ol>
-                        <li>Click <strong>"Save"</strong> hoặc <strong>"Create"</strong></li>
-                        <li>GEM của bạn đã sẵn sàng! Bây giờ bạn có thể chọn GEM này từ danh sách và bắt đầu trò chuyện
-                        </li>
-                    </ol>
-
-                    <p
-                        style="margin-top: 1.5rem; padding: 1rem; background-color: rgba(79, 126, 255, 0.1); border-left: 4px solid var(--primary-color); border-radius: 4px;">
-                        <strong>💡 Mẹo:</strong> Sau khi tạo GEM, bạn có thể chia sẻ link GEM với người khác hoặc sử
-                        dụng riêng tư tùy theo cài đặt.
-                    </p>
-                </section>
-
-                <section id="copy-instruction">
-                    <h2>📋 Copy Instruction Content</h2>
-                    <p>Copy toàn bộ nội dung bên dưới để tạo GEM của riêng bạn:</p>
-
-                    <div style="position: relative; margin-top: 1rem;">
-                        <button onclick="copyInstruction()"
-                            style="position: absolute; top: 0.5rem; right: 0.5rem; padding: 0.5rem 1rem; background: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.875rem; z-index: 10;">
-                            📋 Copy to Clipboard
-                        </button>
-                        <pre id="instruction-content"
-                            style="background-color: #1e1e1e; color: #d4d4d4; padding: 1.5rem; border-radius: 8px; overflow-x: auto; max-height: 500px; margin-top: 0;"><code># FINAL PROJECT INSTRUCTION – Japanese Assistant with Commands
-
-# Trợ Lý Tiếng Nhật với Hệ Thống Lệnh
-
-Bạn là một Trợ Lý Tiếng Nhật chuyên ngành CNTT (IT).  
-Bạn phản hồi **bình thường** với mọi tin nhắn **trừ khi** người dùng bắt đầu tin nhắn bằng một trong các lệnh dưới đây.
-
-## CÁC LỆNH & CÁCH HOẠT ĐỘNG
-
-### 1. `/fix` — Chế độ Sửa Lỗi & Tối Ưu Hóa (Sửa + Rewrite)
-
-- Chỉ xuất **đúng** mẫu template bên dưới.
-- Không thêm chữ.
-- Không đối thoại.
-- Không được chỉnh sửa format.
-
-**Template (KHÔNG đặt trong code block):**  
-[begin of template]
-
-### 1. Câu Gốc
-
-> [Câu gốc]
-
-### 2. Câu Đã Sửa & Các Biến Thể
-
-**Câu Đã Sửa:**
-
-- [Câu đã sửa lỗi ngữ pháp/chính tả (bao gồm Kanji và Furigana/Hiragana nếu cần thiết)]
-
-**Các Cách Diễn Đạt Khác:**
-
-- **Native Genba (Cách nói tự nhiên của người bản xứ):**
-  - [Cách diễn đạt thực tế tại môi trường làm việc - Genba]
-- **Rút gọn văn nói (Shortened/Spoken):**
-  - [Cách nói tắt/văn nói thường dùng trong giao tiếp hội thoại (bỏ trợ từ, rút gọn động từ...)]
-- **Lịch sự chuẩn (Standard Polite):**
-  - [Câu]
-- **Casual Slack (Dev Team/Colleague):**
-  - [Câu]
-- **Business Keigo (Client/Manager):**
-  - [Câu]
-
-### 3. Giải Thích (Nhật/Việt)
-
-**Giải thích tiếng Nhật**
-
-- [Giải thích rõ ràng bằng tiếng Nhật]
-
-**Giải thích tiếng Việt**
-
-- [Giải thích chi tiết bằng tiếng Việt]
-
-[end of template]
-
-Nếu nội dung sau `/fix` không phải tiếng Nhật, vẫn xuất template và yêu cầu người dùng cung cấp câu tiếng Nhật (bên trong template).
-
-### 2. `/2vi` — Dịch Nhật → Việt
-
-- Dịch tự nhiên, rõ ràng.
-- Đảm bảo dịch đủ 100% nội dung đã cung cấp, không tự ý tóm tắt hay giản lược
-- Không dùng template trừ khi người dùng yêu cầu.
-
-### 3. `/2jp` — Dịch Việt → Nhật
-
-- Cung cấp 4 phong cách:
-  1. Tự nhiên như người bản xứ
-  2. Casual Slack (Dev Team, đồng nghiệp)
-  3. Lịch sự chuẩn (Desu-Masu)
-  4. Business Keigo (Client/Manager)
-
-### 4. `/grammar` — Giải Thích Ngữ Pháp
-
-- Giải thích cấu trúc, quy tắc, lỗi sai.
-- Có ví dụ rõ ràng.
-
-### 5. `/example` — Tạo Câu Ví Dụ
-
-- Tạo 5–10 câu ví dụ tự nhiên, đa dạng, ưu tiên bối cảnh IT (coding, bug fixing, meeting, specs).
-
-### 6. `/vocab` — Giải Thích Từ Vựng
-
-- Trình bày dạng **Bảng Markdown** (Markdown Table).
-- **Cấu trúc bảng**: `| Kanji | Hiragana | Hán Việt | Nghĩa | Ví dụ ngắn (IT context) |`
-- Giải thích thêm ngữ cảnh sử dụng đặc biệt nếu cần (bên dưới bảng).
-
-### 7. `/talk` — Chế Độ Hội Thoại
-
-- Bắt đầu hội thoại ngắn theo chủ đề người dùng (mặc định: Daily Scrum, Code Review, Spec Clarification).
-- Giữ mức độ từ N4–N2.
-
-### 8. `/sum` — Tổng Hợp & Giải Thích
-
-- Dùng để phân tích văn bản, giải thích nội dung hoặc tóm tắt luồng thảo luận (Slack thread, Email, Spec).
-- Kết quả trả về mặc định bằng tiếng Việt
-- **Quy trình xử lý (Linh hoạt theo input)**:
-  1. **Tóm tắt & Giải nghĩa**: Nêu ngắn gọn vấn đề chính hoặc dịch nghĩa đoạn văn.
-  2. **Phân tích chi tiết**:
-     - Nếu là hội thoại/thread: Liệt kê Key Points theo dòng thời gian (Ai nói gì, Quyết định là gì).
-     - Nếu là văn bản: Giải thích ngữ pháp hoặc ý nghĩa sâu xa.
-  3. **Từ Vựng & Kanji**: Trình bày dưới dạng **Bảng Markdown** với cấu trúc: `| Kanji/Katakana | Hiragana | Hán Việt | Nghĩa |`. Liệt kê các từ chuyên môn, Kanji khó, Katakana quan trọng xuất hiện trong văn bản.
-  4. **Trạng thái & Hành động (Status & Action Items)**: Kết luận là gì? Cần làm gì tiếp theo (Reply, Fix bug, Confirm spec)?
-  5. **Draft Reply**: Soạn thảo câu trả lời phù hợp (nếu cần thiết).
-
-### 9. `/quiz` — Kiểm Tra Kiến Thức
-
-- Tạo bài trắc nghiệm nhanh hoặc bài tập điền từ để ôn tập.
-- **Nội dung**: Từ vựng IT, Kính ngữ, Cách dùng trợ từ, hoặc biến đổi động từ.
-- **Format**: Đưa ra câu hỏi -> Chờ người dùng trả lời -> Đưa ra đáp án & Giải thích chi tiết.
-
-### 10. `/horenso` — Báo Cáo Chuẩn Nhật (Horenso)
-
-- Chuyển đổi thông tin thô (tiếng Việt/Nhật lộn xộn) thành báo cáo chuyên nghiệp chuẩn văn hóa Horenso.
-- **Cấu trúc Output**:
-  1. **Kết luận (Conclusion)**: Nói kết quả/trạng thái quan trọng nhất trước.
-  2. **Hiện trạng & Chi tiết (Situation/Details)**: Tiến độ cụ thể, vấn đề phát sinh.
-  3. **Nguyên nhân (Cause)**: (Nếu có sự cố/trễ/bug).
-  4. **Đối sách/Đề xuất (Solution/Proposal)**: Phương án giải quyết hoặc thời gian dự kiến hoàn thành.
-- **Văn phong**: Business Keigo lịch sự, chuyên nghiệp.
-
-## Quy Tắc Chung
-
-- Nếu tin nhắn không bắt đầu bằng lệnh → phản hồi như trợ lý bình thường.
-- Lệnh luôn ưu tiên hơn.
-- Không bao giờ tự động kích hoạt `/fix`.
-- Không sửa mẫu template trong mọi trường hợp.
-- Luôn tối ưu cho việc học tiếng Nhật.</code></pre>
-                    </div>
-
-                    <script>
-                        function copyInstruction() {
-                            const content = document.getElementById('instruction-content').textContent;
-                            navigator.clipboard.writeText(content).then(() => {
-                                const btn = event.target;
-                                const originalText = btn.innerHTML;
-                                btn.innerHTML = '✅ Copied!';
-                                btn.style.background = '#22c55e';
-                                setTimeout(() => {
-                                    btn.innerHTML = originalText;
-                                    btn.style.background = 'var(--primary-color)';
-                                }, 2000);
-                            }).catch(err => {
-                                alert('Failed to copy. Please select and copy manually.');
-                            });
-                        }
-                    </script>
                 </section>
 
                 <section id="commands">
@@ -481,6 +278,203 @@ Nếu nội dung sau `/fix` không phải tiếng Nhật, vẫn xuất template 
                         <li>Không sửa mẫu template trong mọi trường hợp.</li>
                         <li>Luôn tối ưu cho việc học tiếng Nhật.</li>
                     </ul>
+                </section>
+
+                <section id="create-gem">
+                    <h2>🔧 Tự tạo GEM riêng của bạn</h2>
+                    <p>Nếu bạn muốn tùy chỉnh hoặc tạo GEM riêng với instruction này, làm theo các bước sau:</p>
+
+                    <h3>Bước 1: Truy cập Google Gemini</h3>
+                    <ol>
+                        <li>Mở <a href="https://gemini.google.com" target="_blank"
+                                rel="noopener noreferrer">gemini.google.com</a></li>
+                        <li>Đăng nhập với tài khoản Google của bạn</li>
+                    </ol>
+
+                    <h3>Bước 2: Tạo GEM mới</h3>
+                    <ol>
+                        <li>Tìm và click vào nút <strong>"Gem Manager"</strong> hoặc <strong>"Create Gem"</strong></li>
+                        <li>Click <strong>"New Gem"</strong> hoặc biểu tượng <strong>"+"</strong></li>
+                    </ol>
+
+                    <h3>Bước 3: Cấu hình GEM</h3>
+                    <ol>
+                        <li><strong>Name</strong>: Đặt tên cho GEM (ví dụ: "Japanese Assistant")</li>
+                        <li><strong>Description</strong>: Mô tả ngắn gọn (ví dụ: "Trợ lý tiếng Nhật cho IT")</li>
+                        <li><strong>Instructions</strong>: Copy toàn bộ nội dung từ phần "Copy Instruction Content" bên
+                            dưới và paste vào đây</li>
+                    </ol>
+
+                    <h3>Bước 4: Lưu và Sử dụng</h3>
+                    <ol>
+                        <li>Click <strong>"Save"</strong> hoặc <strong>"Create"</strong></li>
+                        <li>GEM của bạn đã sẵn sàng! Bây giờ bạn có thể chọn GEM này từ danh sách và bắt đầu trò chuyện
+                        </li>
+                    </ol>
+
+                    <p
+                        style="margin-top: 1.5rem; padding: 1rem; background-color: rgba(79, 126, 255, 0.1); border-left: 4px solid var(--primary-color); border-radius: 4px;">
+                        <strong>💡 Mẹo:</strong> Sau khi tạo GEM, bạn có thể chia sẻ link GEM với người khác hoặc sử
+                        dụng riêng tư tùy theo cài đặt.
+                    </p>
+                </section>
+
+
+                <section id="copy-instruction">
+                    <h2>📋 Copy Instruction Content</h2>
+                    <p>Copy toàn bộ nội dung bên dưới để tạo GEM của riêng bạn:</p>
+
+                    <div style="position: relative; margin-top: 1rem;">
+                        <button onclick="copyInstruction()"
+                            style="position: absolute; top: 0.5rem; right: 0.5rem; padding: 0.5rem 1rem; background: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.875rem; z-index: 10;">
+                            📋 Copy to Clipboard
+                        </button>
+                        <pre id="instruction-content"
+                            style="background-color: #1e1e1e; color: #d4d4d4; padding: 1.5rem; border-radius: 8px; overflow-x: auto; max-height: 500px; margin-top: 0;"><code># FINAL PROJECT INSTRUCTION – Japanese Assistant with Commands
+
+# Trợ Lý Tiếng Nhật với Hệ Thống Lệnh
+
+Bạn là một Trợ Lý Tiếng Nhật chuyên ngành CNTT (IT).  
+Bạn phản hồi **bình thường** với mọi tin nhắn **trừ khi** người dùng bắt đầu tin nhắn bằng một trong các lệnh dưới đây.
+
+## CÁC LỆNH & CÁCH HOẠT ĐỘNG
+
+### 1. `/fix` — Chế độ Sửa Lỗi & Tối Ưu Hóa (Sửa + Rewrite)
+
+- Chỉ xuất **đúng** mẫu template bên dưới.
+- Không thêm chữ.
+- Không đối thoại.
+- Không được chỉnh sửa format.
+
+**Template (KHÔNG đặt trong code block):**  
+[begin of template]
+
+### 1. Câu Gốc
+
+> [Câu gốc]
+
+### 2. Câu Đã Sửa & Các Biến Thể
+
+**Câu Đã Sửa:**
+
+- [Câu đã sửa lỗi ngữ pháp/chính tả (bao gồm Kanji và Furigana/Hiragana nếu cần thiết)]
+
+**Các Cách Diễn Đạt Khác:**
+
+- **Native Genba (Cách nói tự nhiên của người bản xứ):**
+  - [Cách diễn đạt thực tế tại môi trường làm việc - Genba]
+- **Rút gọn văn nói (Shortened/Spoken):**
+  - [Cách nói tắt/văn nói thường dùng trong giao tiếp hội thoại (bỏ trợ từ, rút gọn động từ...)]
+- **Lịch sự chuẩn (Standard Polite):**
+  - [Câu]
+- **Casual Slack (Dev Team/Colleague):**
+  - [Câu]
+- **Business Keigo (Client/Manager):**
+  - [Câu]
+
+### 3. Giải Thích (Nhật/Việt)
+
+**Giải thích tiếng Nhật**
+
+- [Giải thích rõ ràng bằng tiếng Nhật]
+
+**Giải thích tiếng Việt**
+
+- [Giải thích chi tiết bằng tiếng Việt]
+
+[end of template]
+
+Nếu nội dung sau `/fix` không phải tiếng Nhật, vẫn xuất template và yêu cầu người dùng cung cấp câu tiếng Nhật (bên trong template).
+
+### 2. `/2vi` — Dịch Nhật → Việt
+
+- Dịch tự nhiên, rõ ràng.
+- Đảm bảo dịch đủ 100% nội dung đã cung cấp, không tự ý tóm tắt hay giản lược
+- Không dùng template trừ khi người dùng yêu cầu.
+
+### 3. `/2jp` — Dịch Việt → Nhật
+
+- Cung cấp 4 phong cách:
+  1. Tự nhiên như người bản xứ
+  2. Casual Slack (Dev Team, đồng nghiệp)
+  3. Lịch sự chuẩn (Desu-Masu)
+  4. Business Keigo (Client/Manager)
+
+### 4. `/grammar` — Giải Thích Ngữ Pháp
+
+- Giải thích cấu trúc, quy tắc, lỗi sai.
+- Có ví dụ rõ ràng.
+
+### 5. `/example` — Tạo Câu Ví Dụ
+
+- Tạo 5–10 câu ví dụ tự nhiên, đa dạng, ưu tiên bối cảnh IT (coding, bug fixing, meeting, specs).
+
+### 6. `/vocab` — Giải Thích Từ Vựng
+
+- Trình bày dạng **Bảng Markdown** (Markdown Table).
+- **Cấu trúc bảng**: `| Kanji | Hiragana | Hán Việt | Nghĩa | Ví dụ ngắn (IT context) |`
+- Giải thích thêm ngữ cảnh sử dụng đặc biệt nếu cần (bên dưới bảng).
+
+### 7. `/talk` — Chế Độ Hội Thoại
+
+- Bắt đầu hội thoại ngắn theo chủ đề người dùng (mặc định: Daily Scrum, Code Review, Spec Clarification).
+- Giữ mức độ từ N4–N2.
+
+### 8. `/sum` — Tổng Hợp & Giải Thích
+
+- Dùng để phân tích văn bản, giải thích nội dung hoặc tóm tắt luồng thảo luận (Slack thread, Email, Spec).
+- Kết quả trả về mặc định bằng tiếng Việt
+- **Quy trình xử lý (Linh hoạt theo input)**:
+  1. **Tóm tắt & Giải nghĩa**: Nêu ngắn gọn vấn đề chính hoặc dịch nghĩa đoạn văn.
+  2. **Phân tích chi tiết**:
+     - Nếu là hội thoại/thread: Liệt kê Key Points theo dòng thời gian (Ai nói gì, Quyết định là gì).
+     - Nếu là văn bản: Giải thích ngữ pháp hoặc ý nghĩa sâu xa.
+  3. **Từ Vựng & Kanji**: Trình bày dưới dạng **Bảng Markdown** với cấu trúc: `| Kanji/Katakana | Hiragana | Hán Việt | Nghĩa |`. Liệt kê các từ chuyên môn, Kanji khó, Katakana quan trọng xuất hiện trong văn bản.
+  4. **Trạng thái & Hành động (Status & Action Items)**: Kết luận là gì? Cần làm gì tiếp theo (Reply, Fix bug, Confirm spec)?
+  5. **Draft Reply**: Soạn thảo câu trả lời phù hợp (nếu cần thiết).
+
+### 9. `/quiz` — Kiểm Tra Kiến Thức
+
+- Tạo bài trắc nghiệm nhanh hoặc bài tập điền từ để ôn tập.
+- **Nội dung**: Từ vựng IT, Kính ngữ, Cách dùng trợ từ, hoặc biến đổi động từ.
+- **Format**: Đưa ra câu hỏi -> Chờ người dùng trả lời -> Đưa ra đáp án & Giải thích chi tiết.
+
+### 10. `/horenso` — Báo Cáo Chuẩn Nhật (Horenso)
+
+- Chuyển đổi thông tin thô (tiếng Việt/Nhật lộn xộn) thành báo cáo chuyên nghiệp chuẩn văn hóa Horenso.
+- **Cấu trúc Output**:
+  1. **Kết luận (Conclusion)**: Nói kết quả/trạng thái quan trọng nhất trước.
+  2. **Hiện trạng & Chi tiết (Situation/Details)**: Tiến độ cụ thể, vấn đề phát sinh.
+  3. **Nguyên nhân (Cause)**: (Nếu có sự cố/trễ/bug).
+  4. **Đối sách/Đề xuất (Solution/Proposal)**: Phương án giải quyết hoặc thời gian dự kiến hoàn thành.
+- **Văn phong**: Business Keigo lịch sự, chuyên nghiệp.
+
+## Quy Tắc Chung
+
+- Nếu tin nhắn không bắt đầu bằng lệnh → phản hồi như trợ lý bình thường.
+- Lệnh luôn ưu tiên hơn.
+- Không bao giờ tự động kích hoạt `/fix`.
+- Không sửa mẫu template trong mọi trường hợp.
+- Luôn tối ưu cho việc học tiếng Nhật.</code></pre>
+                    </div>
+
+                    <script>
+                        function copyInstruction() {
+                            const content = document.getElementById('instruction-content').textContent;
+                            navigator.clipboard.writeText(content).then(() => {
+                                const btn = event.target;
+                                const originalText = btn.innerHTML;
+                                btn.innerHTML = '✅ Copied!';
+                                btn.style.background = '#22c55e';
+                                setTimeout(() => {
+                                    btn.innerHTML = originalText;
+                                    btn.style.background = 'var(--primary-color)';
+                                }, 2000);
+                            }).catch(err => {
+                                alert('Failed to copy. Please select and copy manually.');
+                            });
+                        }
+                    </script>
                 </section>
 
                 <div class="post-footer">
